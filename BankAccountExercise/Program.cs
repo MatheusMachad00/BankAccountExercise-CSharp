@@ -31,18 +31,18 @@ namespace MyApp {
             }
 
             Console.WriteLine("\nDados da conta:");
-            Console.WriteLine(account.AccountData());
+            Console.WriteLine(account);
 
             Console.Write("\nDigite um valor para depósito: ");
             account.Deposit(double.Parse(Console.ReadLine()));
             Console.WriteLine("Conta com dados atualizados: ");
-            Console.WriteLine(account.AccountData());
+            Console.WriteLine(account);
 
 
             Console.Write("\nDigite um valor para saque: ");
             account.Withdraw(double.Parse(Console.ReadLine()));
             Console.WriteLine("Conta com dados atualizados: ");
-            Console.WriteLine(account.AccountData());
+            Console.WriteLine(account);
         }
     }
 }

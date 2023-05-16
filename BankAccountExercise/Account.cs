@@ -12,9 +12,7 @@ namespace BankAccountExercise {
             Name = name;
         }
 
-        public Account(int accountNumber, string name, double balance) {
-            AccountNumber = accountNumber;
-            Name = name;
+        public Account(int accountNumber, string name, double balance) : this(accountNumber, name) {
             Balance = balance;
         }
 
@@ -25,9 +23,14 @@ namespace BankAccountExercise {
         public void Withdraw(double value) {
             Balance = Balance - (value + 5);
         }
-        public string AccountData() {
+
+        public override string ToString() {
             return $"Conta: {AccountNumber}, Titular: {Name}, Saldo: R${Balance.ToString("F2", CultureInfo.InvariantCulture)}";
         }
+
+        //public string AccountData() {
+        //    return $"Conta: {AccountNumber}, Titular: {Name}, Saldo: R${Balance.ToString("F2", CultureInfo.InvariantCulture)}";
+        //}
 
     }
 }
