@@ -3,9 +3,9 @@
 namespace BankAccountExercise {
     internal class Account {
 
-        private int AccountNumber { get; set; }
-        private string Name { get; set; }
-        private double Balance { get; set; }
+        public int AccountNumber { get; private set; }
+        public string Name { get; set; }
+        public double Balance { get; private set; }
 
         public Account(int accountNumber, string name) {
             AccountNumber = accountNumber;
