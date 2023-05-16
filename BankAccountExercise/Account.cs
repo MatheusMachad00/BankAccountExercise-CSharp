@@ -27,10 +27,5 @@ namespace BankAccountExercise {
         public override string ToString() {
             return $"Conta: {AccountNumber}, Titular: {Name}, Saldo: R${Balance.ToString("F2", CultureInfo.InvariantCulture)}";
         }
-
-        //public string AccountData() {
-        //    return $"Conta: {AccountNumber}, Titular: {Name}, Saldo: R${Balance.ToString("F2", CultureInfo.InvariantCulture)}";
-        //}
-
     }
 }
